@@ -6,6 +6,10 @@ import './App.css'
 import ClassComponent from './components/ClassComponent'
 import FunctionalComponent from "./Components/FunctionalComponent.jsx";
 import useWindowWidth from "./CustomHooks/useWindowWidth.jsx";
+
+import Events from "./Components/Events.jsx";
+// import data from ;
+
 function App() {
     // eslint-disable-next-line no-unused-vars
     const [count, setCount] = useState(0)
@@ -58,6 +62,11 @@ function App() {
                 &nbsp; & The background is : {background}
             </p>
             <p> width : {windowWidth.width } px x height:{windowWidth.height }</p>
+
+            {/* eslint-disable-next-line react/jsx-no-undef */}
+            {/*pass data as prop*/}
+
+            <Events></Events>
         </>
     )
 }
